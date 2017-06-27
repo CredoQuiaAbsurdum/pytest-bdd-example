@@ -200,7 +200,7 @@ pytest -k "Tag1 and Tag2 and Tag3"
 pytest -k "not Tag1"
 ```
 
-### Reporting
+### Report
 To have an output in json format:
 ```
 py.test --cucumberjson=<path to json report>
