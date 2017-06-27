@@ -68,11 +68,11 @@ Feature: some description ...
 ```
 #pageTitle.feature
 Feature: Check the page title
-	Scenario Outline: Check page title for XX page
-		Given I am on the zoo website
-		When I navigate to <xx_link>
-		Then I check page title is "<xx>"
-		And I close the browser
+  Scenario Outline: Check page title for XX page
+    Given I am on the zoo website
+    When I navigate to <xx_link>
+    Then I check page title is "<xx>"
+    And I close the browser
     Examples:
     |xx_link        |xx       |
     |adoption_link  |Adoption |
@@ -86,10 +86,10 @@ Scenario Outline: Outlined given, when, thens
 	Given there are <start> cucumbers
 	When I eat <eat> cucumbers
 	Then I should have <left> cucumbers
-		Examples: Vertical
-		| start | 12 | 2  | 
-		| eat   | 5  | 1  |  
-		| left  | 7  | 1  |
+	Examples: Vertical
+	| start | 12 | 2  | 
+	| eat   | 5  | 1  |  
+	| left  | 7  | 1  |
 ```
 
 ### Generate test files
