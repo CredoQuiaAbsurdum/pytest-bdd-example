@@ -173,7 +173,7 @@ elem = driver.find_element_by_name("q")
 ```
 elem.clear()
 ```  
-  - Sending keys
+  - Send keys
 ```
 from selenium.webdriver.common.keys import Keys
 elem.send_keys("pycon")
@@ -183,19 +183,19 @@ See more information in the official document: [selenium-python.pdf](https://med
 
 ### Run the tests
 
-* Running all the tests
+* Run all the tests
 ```
 pytest
 ```
-* Running a specified file
+* Run a specified file
 ```
 pytest test_something.py
 ```
-* Running tests with sepcific tags
+* Run tests with sepcific tags
 ```
 pytest -k "Tag1 and Tag2 and Tag3"
 ```
-* Running tests without a certain tag
+* Run tests without a certain tag
 ```
 pytest -k "not Tag1"
 ```
