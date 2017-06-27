@@ -13,7 +13,7 @@ from selenium import webdriver
 @pytest.fixture(autouse=True, scope='function')
 def setup(request):
     global driver
-    driver = webdriver.Chrome("/Users/yuxuan.zhao/BDD/protractor-gherkin-cucumberjs-angular2/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.26")
+    driver = webdriver.Chrome("/Users/yuxuan.zhao/chromedriver")
     def fin():
         driver.quit()
         request.addfinalizer(fin)

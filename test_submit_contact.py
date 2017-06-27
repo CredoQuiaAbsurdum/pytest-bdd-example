@@ -13,7 +13,7 @@ from selenium import webdriver
 @pytest.fixture(autouse=True, scope='module')
 def setup(request):
     global driver
-    driver = webdriver.Chrome("/Users/yuxuan.zhao/BDD/protractor-gherkin-cucumberjs-angular2/node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.26")
+    driver = webdriver.Chrome("/Users/yuxuan.zhao/chromedriver")
     def fin():
         driver.quit()
         request.addfinalizer(fin)
@@ -42,7 +42,7 @@ def i_submit_the_form_with_valid_data():
     #driver.find_element_by_name("postcode_field").sendKeys(data.get(3).get(1))
     #driver.find_element_by_name("email_field").sendKeys(data.get(4).get(1))
 
-    #driver.find_element_by_name("name_field").send_keys("Chris")
+    driver.find_element_by_name("name_field").send_keys("Chris")
     driver.find_element_by_name("address_field").send_keys("Galaxy")
     driver.find_element_by_name("postcode_field").send_keys("P2D F3F")
     driver.find_element_by_name("email_field").send_keys("light@star.com")
