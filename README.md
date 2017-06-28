@@ -96,8 +96,7 @@ Scenario Outline: Outlined given, when, thens
 **NOTICE:** 
 * A test file and its corresponding feature file MUST stay in the same dirctory
 * The name of a test file MUST be in the form of <i>test_\*.py</i> or <i>\*_test.py</i>
-* After the generation by pytest-bdd, *And* will be autometically modified to *given*, *when*, or *then* in the test file according to its previous sentence.
-
+* According to the previous sentence, *And* statement will be autometically modified to *given*, *when*, or *then* statement in the test file.
 • Create fully functional but of course empty tests and step definitions for given a feature file.
 ```
 pytest-bdd generate someFeature.feature
