@@ -1,5 +1,8 @@
 # pytest-bdd Cheat Sheet
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.823572.svg)](https://doi.org/10.5281/zenodo.823572)
+
+
 ### Recommendations
 Before using this cheat sheet:
 + Learn the following about [Gherkin](https://cucumber.io/docs/reference#gherkin):
